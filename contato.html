@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contato - Fernando Paulo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .box-contato {
+            background-color: white;
+            margin: 1em auto;
+            padding: 2em;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .box-contato h2 {
+            color: #007BFF;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        form label {
+            display: block;
+            margin: 0.5em 0 0.2em;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <section id="contato" class="box-contato">
+        <h2>Contato</h2>
+        <p>Entre em contato comigo preenchendo o formulário abaixo:</p>
+        <form id="form-contato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            
+            <label for="mensagem">Feedback:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva seu feedback aqui" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="feedback-mensagem" style="color: green; display: none;">Obrigado pelo seu feedback! 😊</p>
+    </section>
+
+    <script>
+        document.getElementById('form-contato').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita o envio tradicional do formulário
+            
+            // Coletar os dados do formulário
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const mensagem = document.getElementById('mensagem').value;
+    
+            // Simular o envio e exibir uma mensagem de sucesso
+            if (nome && email && mensagem) {
+                document.getElementById('feedback-mensagem').style.display = 'block';
+                console.log("Dados enviados:");
+                console.log("Nome:", nome);
+                console.log("E-mail:", email);
+                console.log("Mensagem:", mensagem);
+    
+                // Opcional: Limpar os campos do formulário
+                this.reset();
+            } else {
+                alert('Por favor, preencha todos os campos antes de enviar.');
+            }
+        });
+    </script>
+</body>
+</html>

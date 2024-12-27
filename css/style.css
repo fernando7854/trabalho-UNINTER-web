@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Cabeçalho */
+.box-header {
+    background-image: linear-gradient(to bottom, #1a73e8, #42a5f5);
+    color: #fff;
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Navegação */
+.navigation {
+    width: 100%;
+    background-color: #42a5f5;
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.navigation a {
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.navigation a:hover {
+    background-color: #1a73e8;
+}
+
+/* Conteúdo principal */
+main {
+    display: block;
+    max-width: 1000px;
+    background-color: #ffffff;
+    margin: 30px auto;
+    padding: 30px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+/* Espaçamento entre parágrafos */
+p {
+    margin-bottom: 20px;
+}
+
+/* Estilização de títulos */
+.box-principal h1,
+.box-principal h2,
+.box-trabalho-atual h1,
+.box-trabalho-atual h2,
+.box-metas-profissionais h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #1a73e8;
+    margin-bottom: 20px;
+}
+
+/* Textos e Parágrafos */
+.box-principal p,
+.box-trabalho-atual p,
+.box-metas-profissionais p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8em;
+    color: #555;
+}
+
+/* Seções de Texto com Fundos Coloridos */
+.box-principal,
+.box-trabalho-atual,
+.box-metas-profissionais {
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Adiciona espaçamento entre seções */
+}
+
+/* Imagens */
+.box-metas-profissionais img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Rodapé */
+.box-footer {
+    width: 100%;
+    padding: 50px;
+    background-color: #1a73e8;
+    color: #fff;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.box-footer h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+/* Adicionando transições suaves a todos os elementos */
+* {
+    transition: all 0.3s ease-in-out;
+}

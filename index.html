@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Página Principal - Fernando Paulo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .box-header, .box-footer {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .navigation ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        .navigation ul li {
+            margin: 0 1em;
+        }
+        .navigation ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            display: block;
+        }
+        .navigation ul li a:hover {
+            background-color: #575757;
+        }
+        .box-principal, .box-trabalho-atual, .box-metas-profissionais, .box-contato {
+            background-color: white;
+            margin: 1em auto;
+            padding: 2em;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .box-principal h2, .box-trabalho-atual h2, .box-metas-profissionais h2, .box-contato h2 {
+            color: #007BFF;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        form label {
+            display: block;
+            margin: 0.5em 0 0.2em;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="box-header">
+        <h1>Fernando Paulo de Jesus Santos</h1>
+        <p>Aluno UNINTER | RU: 4876804</p>
+    </header>
+    
+    <nav class="navigation">
+        <ul>
+            <li><a href="#sobre-mim">Sobre Mim</a></li>
+            <li><a href="#trabalho-atual">Meu Trabalho Atual</a></li>
+            <li><a href="#metas-profissionais">Minhas Metas</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="sobre-mim" class="box-principal">
+            <h2>Minha Página Pessoal</h2>
+            <h3>De Garçom a Analista de Sistemas: Uma Jornada de Transformação</h3>
+            <p>
+                Trabalhar como garçom exige dedicação, atenção aos detalhes e habilidade para lidar com pessoas. 
+                Essas competências, embora pareçam distantes do mundo da tecnologia, podem ser um ótimo ponto de 
+                partida para quem deseja fazer a transição para a área de análise de sistemas.
+            </p>
+            <p>
+                Minha experiência como garçom me ensinou a importância da comunicação eficaz e do trabalho em equipe, 
+                habilidades que são igualmente valiosas no campo da tecnologia. A transição para a análise de sistemas 
+                foi um desafio, mas também uma oportunidade de crescimento pessoal e profissional.
+            </p>
+        </section>
+
+        <section id="trabalho-atual" class="box-trabalho-atual">
+            <h2>Meu Trabalho Atual</h2>
+            <p>
+                Trabalhar como garçom é estar sempre em movimento e em contato com pessoas. Minha rotina começa 
+                antes mesmo dos clientes chegarem, quando preparo o ambiente: organizo as mesas, verifico se tudo 
+                está limpo e em ordem, e confiro o estoque de utensílios e materiais necessários para o atendimento.
+            </p>
+            <p>
+                Durante o atendimento, é essencial manter a calma e a eficiência, mesmo nos momentos mais movimentados. 
+                Cada interação com os clientes é uma oportunidade de proporcionar uma experiência positiva e memorável.
+            </p>
+            <img src="img/fernando-paulo-garcom.jpg" alt="Fernando Paulo trabalhando como garçom" title="Meu trabalho atual" width="400">
+            <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Voltar ao Topo</button>
+        </section>
+        
+        <section id="metas-profissionais" class="box-metas-profissionais">
+            <h2>Minhas Metas Profissionais</h2>
+            <h3>Minha Transição de Carreira para Analista de Sistemas</h3>
+            <p>
+                Minha jornada profissional passou por uma grande transformação. Depois de anos trabalhando como garçom, 
+                decidi seguir um novo caminho: a área de tecnologia, mais especificamente como analista de sistemas.
+            </p>
+            <p>
+                Essa decisão foi motivada pelo desejo de crescimento e pela busca por um futuro mais estável e alinhado 
+                aos meus interesses. Sempre admirei a tecnologia e como ela transforma o mundo, então, investir nessa área 
+                parecia o passo certo.
+            </p>
+            <p>
+                Comecei minha transição dedicando meu tempo livre aos estudos. Fiz cursos introdutórios de programação e 
+                bancos de dados, explorando linguagens como Java e Python. Descobri que aprender algo novo exige disciplina, 
+                mas também traz uma satisfação imensa ao perceber meu progresso.
+            </p>
+            <p>
+                Minhas metas futuras incluem obter certificações reconhecidas na área de tecnologia, como a certificação 
+                da UNINTER. Além disso, pretendo 
+                continuar aprimorando minhas habilidades em desenvolvimento de software e análise de dados.
+            </p>
+            <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Voltar ao Topo</button>
+        </section>
+
+        <section id="contato" class="box-contato">
+            <h2>Contato</h2>
+            <p>Entre em contato comigo preenchendo o formulário abaixo:</p>
+            <form id="form-contato">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                
+                <label for="mensagem">Feedback:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva seu feedback aqui" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="feedback-mensagem" style="color: green; display: none;">Obrigado pelo seu feedback! 😊</p>
+        </section>
+        
+        <script>
+            document.getElementById('form-contato').addEventListener('submit', function(event) {
+                event.preventDefault(); // Evita o envio tradicional do formulário
+                
+                // Coletar os dados do formulário
+                const nome = document.getElementById('nome').value;
+                const email = document.getElementById('email').value;
+                const mensagem = document.getElementById('mensagem').value;
+        
+                // Simular o envio e exibir uma mensagem de sucesso
+                if (nome && email && mensagem) {
+                    document.getElementById('feedback-mensagem').style.display = 'block';
+                    console.log("Dados enviados:");
+                    console.log("Nome:", nome);
+                    console.log("E-mail:", email);
+                    console.log("Mensagem:", mensagem);
+        
+                    // Opcional: Limpar os campos do formulário
+                    this.reset();
+                } else {
+                    alert('Por favor, preencha todos os campos antes de enviar.');
+                }
+            });
+        </script>
+        
+        
+    </main>
+
+    <footer class="box-footer">
+        <h2>Desenvolvido por <span class="footer">Fernando Paulo de Jesus Santos</span></h2>
+        <h3>Instituição:</h3>
+        <p>
+            Universidade Internacional 
+            <a href="https://www.uninter.com/graduacao/a-distancia/?gad_source=1&gclid=Cj0KCQiAgdC6BhCgARIsAPWNWH3FMcR2KpVuKrCaEDhrsQc_7EizCe8puz77UmNzWYEFDJW9zDbML2EaAo5rEALw_wcB&gclsrc=aw.ds" target="_blank" rel="noopener noreferrer">
+                UNINTER
+           
